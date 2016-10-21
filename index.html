@@ -3,175 +3,93 @@
 <html>
   <head>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-      $.getJSON("http://cooper-union-weather-proxy.herokuapp.com/weather/" + state + "/" + city, function(response){
-        console.log(response);
-        //create image tag
-        var doodle = '<img src="'+https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/14691351_1224988804238994_7391389846673340707_o.jpg+'" />';
-
-        //append image tag to #first
-        $('.second').append(doodle);
-
-        });
-
-        $(document).ready(function(){
-
-          $(".second").hover(function(){
-            $(".second").toggleClass("forth");
-          })
-
-        });
-
-      </script>
-
-    <title> Saige Hopkins</title>
-    <link rel="stylesheet" type="text/css" href="webpage.css" />
+    <title>Saige Hopkins</title>
     <style>
-    body {
-      margin:0;
-    }
 
-    * {
-        background-color:rgba(255,0,0,.15);
-    }
+      body {
+        margin:0;
+      }
 
+      * {
+          background-color:rgba(255,0,0,.15);
+      }
 
-    .second {
-  position: absolute;
-  top: 120px;
-  left: 150px;
-  width:10000px;
-  height:500px;
-  -webkit-transition: width 6s, height 6s;
-}
+      img{
+          width: 50%;
+          float: none;
+          border: 2px solid #92b818;
+      }
 
-  .forth {
-    top: 70px;
-    left: 1000px;
-    width:10000px;
-    height:500px;
-    -webkit-transition: top 3s, left 8s;
-  }
-    img{
-        width: 33%;
-        float: none;
-        border: 2px solid #92b818;
-    }
+      p {
+        font-size: 25px;
+        text-align: center;
+        font-family: monospace;
+        color: #89451c;
+      }
 
-    p {
-      font-size: 25px;
-      text-align: center;
-      font-family: monospace;
-      color: #89451c;
-    }
+      a {
+       text-decoration: none;
+       background-color: rgba(0, 0, 0, 0.01);
+      }
 
-    a {
-     text-decoration: none;
-     background-color: rgba(0, 0, 0, 0.01);
+      ul {
+        display: flex;
+        list-style-type: none;
+        padding:10px;
+        margin:10px;
+      }
 
-    }
+      li {
+        border:none;
+        width:100%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
 
-    ul {
-      display: flex;
-      list-style-type: none;
-      padding:10px;
-      margin:10px;
-    }
+      div {
+        background-image: url(http://gardenpool.org/wp-content/uploads/2010/07/Duckweed-AQ-IALG.jpg);
+        height:285px;
+        background-position: center;
+        padding:10px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
 
-    li {
-      border:none;
-      width:100%;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+      .title {
+        height: 100px;
+        font-style: italic;
+        font-family: monospace;
+        margin-left: 25px;
+        font-size: 50px;
+        color: #9d4828;
+        text-shadow: 3px 2px #a8aeac;
+      }
 
-    div {
-      background-image: url(http://gardenpool.org/wp-content/uploads/2010/07/Duckweed-AQ-IALG.jpg);
-      height:285px;
-      background-position: center;
-      padding:10px;
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-    .title {
-      height: 100px;
-      font-style: italic;
-      font-family: monospace;
-      margin-left: 25px;
-      font-size: 50px;
-      color: #9d4828;
-      text-shadow: 3px 2px #a8aeac;
-    }
-
-/*    #end {
-      font-style: italic;
-      font-family: monospace;
-      margin-left: 25px;
-      font-size: 50px;
-      color: #9d4828;
-      text-shadow: 3px 2px #a8aeac;
-    }
-
-    section {
-      background-color:rgba(255,0,0,.01);
-      float: right;
-      margin-top: 175px;
-    }
-
-    #forth {
-      width: 820px;
-      margin-top: 70px;
-    }
-    #third img {
-
-      width: 75px;
-    }
-    .pops img {
-      margin-top: 70px;
-      margin-left: 120px;
-      width: 500px;
-
-    }
-    #second {
-      font-family: georgia;
-      font-size: 2em;
-      text-align: center;
-      width: 760px;
-      color: pink;
-
-    }
-
-    */
     </style>
   </head>
+
   <body>
     <header>
       <div class="title">
 					Saige Hopkins
       </div>
-			<p style= "margin-right: 520px; margin-left: 520px;"> we read about:</p>
+			<p style= "margin-right: 30px; margin-left: 30px;"> This is where I will describe
+        my purpose as it pertains to the viewer.</p>
       <ul>
         <li id="first">
-          <p>the dark-eyed junco<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3477244/"><img src="http://www.johnravenscroft.co.uk/mediac/400_0/media/bird$27s~eye~view.jpg"/></a> </p>
+          <p>personal work<a href="http://1saigehopkins.github.io/PhotoAlbum/"><img src="https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/14706862_1225024007568807_8133263479392824983_o.jpg"/></a> </p>
         </li>
         <li id="second">
-					<p>26 yr old wisdom<a href="http://faculty.webster.edu/corbetre/haiti/literature/danticat-ugly.htm"><img src="http://cdn.wego.com/gazo/45/978c432ff455628a72b5c8cbfdb08e4cf38617ec/1815516_J.jpg"/></a></p>
+					<p>listed experiences<a href="http://1saigehopkins.github.io/mapSpecial/"><img src="https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/14707858_1225026124235262_1246204332904428138_o.jpg"/></a></p>
 				</li>
         <li id="third">
-          <p>silky delirium<a href="https://books.google.com/books?id=P-KnQzdQsrcC&pg=PA176&vq=%22he%27s+sitting+there%22&dq=%22It%27s+more+like+you+have+a+good+sixteen+or+eighteen+hours+a+day+of+this+going+on%2C+even+when+you%27re+not+with+her+it%27s+going+on%22&source=gbs_search_s&hl=en#v=onepage&q=%22he's%20sitting%20there%22&f=false
-"><img src="http://www.wilcoxwebworks.com/hs/photos/hs402d.jpg"/></a></p>
+          <p>miscellaneous<a href="http://1saigehopkins.github.io/webdesign/"><img src="http://1.bp.blogspot.com/-lLPY2tqiWh4/VC5dstP-JdI/AAAAAAAABa8/1QpqpDVzFik/s1600/WSBC0006.JPG"/></a></p>
 				</li>
 				<li id="forth">
-          <p>electric potential<a href="http://www.acs.psu.edu/drussell/Demos/waves-intro/waves-intro.html"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGfH1WjpxQjAUuwW1u8w4T4XfWT5_f5D6wREq7uPy7KQFE-guZ"/></a></p>
+          <p>profesisonal work<a href="http://1saigehopkins.github.io/InClassAssignment/"><img src="http://cdn.shopify.com/s/files/1/0948/6310/products/IMG_3867_1024x1024.jpg?v=1476916778"/></a></p>
 				</li>
       </ul>
-			<div id="end"><section>makes me happy</section></div>
+			<div id="endBanner"><section></section></div>
     </header>
-    div class="first"></div>
-      <div class="second"></div>
-      <div class="third"></div>
-      <div class="forth"></div>
-      <div class="fifth"></div>
-      <div class="sixth"></div>
   </body>
 </html>
