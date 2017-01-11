@@ -30,15 +30,27 @@
 
     <style>
 
-    .topBanner img {
-      background-color:rgba(255,255,255,.01);
+    img {
+  -webkit-transition: width 2s, height 2s;
+  width: 10000px;
+}
+
+    .topBanner {
+      width: 600px;
+height: 600px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 50px;
+padding-left: 100px;
+  /*    background-color:rgba(255,255,255,.01);
       width: 35%;
       margin-top: -300px;
       margin-bottom: -250px;
       margin-left: -125px;
       margin-right: 25px;
       font-family: "jaf-domus";
-      -webkit-transition: width 2s, height 2s;
+      -webkit-transition: width 2s, height 2s;   */
 
     }
 
@@ -49,14 +61,16 @@
       }
 
       .stretchd {
-        width: 1px;
-        height: 1px;
+        width: 600px;
+        height: 600px;
       }
 
       .zoom {
-        width: 1px;
-        height: 1px;
-        -webkit-transition: width 2s, height 2s;
+              width: 200px;
+              height: 200px;
+              top: -4000px
+              right:-3000px;
+              -webkit-transition: width 2s, height 2s;
       }
 
       img {
@@ -153,7 +167,7 @@
          saigehopkins at gmail.com
       </div>
 
-      			<div class="topBanner"><section><img src="http://www196.lunapic.com/editor/working/148400428583311?1191733195"/></section></div>
+      			<div class="topBanner"><img src="http://www196.lunapic.com/editor/working/148400428583311?1191733195"/></div>
 <!--			<p style= "margin-right: 30px; margin-left: 30px;"> This is where I will describe
         my purpose as it pertains to the viewer.</p> -->
       <ul>
