@@ -36,8 +36,10 @@
 }
 
     .topBanner {
-      width: 100px;
-      height: 100px;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      margin-left: 60px;
 
 
   /*    background-color:rgba(255,255,255,.01);
@@ -58,17 +60,23 @@
       }
 
       .stretchd {
-        width: 10px;
-        height: 10px;
-        top: -4000px
-        right:-3000px;
+
+        width: 110px;
+        height: 110px;
+        margin-top: 5px;
+        margin-left: 6500px;
+        -webkit-transition: width 5s, height 5s, margin-left 6s, margin-top 5s;
+        -webkit-transform: rotate(5deg);
+
       }
 
       .zoom {
-              width: 500px;
-              height: 500px;
-
-              -webkit-transition: width 5s, height 5s;
+              width: 110px;
+              height: 110px;
+              margin-top: 2px;
+              margin-left: 850px;
+              -webkit-transition: width 5s, height 5s, margin-left 6s, margin-top 5s;
+              -webkit-transform: rotate(5deg);
       }
 
       img {
@@ -161,18 +169,26 @@
 
   <body>
     <header>
+
+
+      <div class="topBanner">
+        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/15965297_1354954234575783_319826512412055414_n.jpg?oh=b02526eb85c5d44ea5db55d97f8bb28e&oe=58DBA1AC"/>
+      </div>
+    <!--			<p style= "margin-right: 30px; margin-left: 30px;"> This is where I will describe
+    my purpose as it pertains to the viewer.</p> -->
+
+
       <div class="title">
          saigehopkins at gmail.com
       </div>
 
-      			<div class="topBanner"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/15965297_1354954234575783_319826512412055414_n.jpg?oh=b02526eb85c5d44ea5db55d97f8bb28e&oe=58DBA1AC"/></div>
-<!--			<p style= "margin-right: 30px; margin-left: 30px;"> This is where I will describe
-        my purpose as it pertains to the viewer.</p> -->
+
       <ul>
         <li class="forth">
           <p><a href="http://1saigehopkins.github.io/InClassAssignment/"><img src="http://cdn.shopify.com/s/files/1/0948/6310/products/IMG_3867_1024x1024.jpg?v=1476916778"/></a> </p>
   <div>      professional work
   </div>
+
         </li>
         <li class="first">
           <p><a href="http://1saigehopkins.github.io/PhotoAlbum/"><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/14707858_1225026124235262_1246204332904428138_o.jpg?oh=b1833c135bfaf12a40d7612d475d2efe&oe=58DD93B7"/></a>
@@ -189,7 +205,6 @@
 				</li>
 
       </ul>
-
 
 			<div class="endBanner"><section></section></div>
 
