@@ -7,9 +7,23 @@
     <script src="https://use.typekit.net/yip5nna.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <script>
+
+    $(function() {
+        $("img").click(function(){
+            $('.topBanner')
+                .animate({left:-1000,top:0,width:0,height:0});
+        });
+    });
+          </script>
+
+
     <style>
 
-    #topBanner img {
+
+
+    .topBanner img {
+      -webkit-transition: left 150s, height 15s;
       background-color:rgba(255,255,255,.01);
       width: 35%;
       margin-top: -300px;
@@ -17,6 +31,7 @@
       margin-left: -125px;
       margin-right: 25px;
       font-family: "jaf-domus";
+
     }
 
       body {
@@ -35,7 +50,7 @@
           /*border: 2px solid #92b818;*/
       }
 
-      #first div {
+      .first div {
 
           font-family: "jaf-domus";
           color: #5a639a;
@@ -45,7 +60,7 @@
 
         }
 
-        #third div {
+        .third div {
 
             color: #5a639a;
             font-size: 18px;
@@ -53,7 +68,7 @@
             font-family: "jaf-domus";
           }
 
-          #forth div {
+          .forth div {
 
               color: #5a639a;
               font-size: 18px;
@@ -67,7 +82,6 @@
         color: #331501;
         font-size: 15px;
         text-align: center;
-
         background-color:rgba(255,0,0,.15);
       }
 
@@ -81,6 +95,8 @@
         margin:10px;
       }
 
+
+
       li {
         background-color:rgba(255,0,0,.15);
         border:none;
@@ -89,7 +105,7 @@
         padding-right: 10px;
       }
 
-      #endBanner {
+      .endBanner {
         background-image: url(http://gardenpool.org/wp-content/uploads/2010/07/Duckweed-AQ-IALG.jpg);
         height:85px;
         background-position: center;
@@ -102,7 +118,7 @@
 
         height: 80px;
         font-family: "alda";
-        margin-left: 1550px;
+        margin-left: 950px;
         margin-top: 75px;
         font-size: 40px;
         color: #541512;
@@ -117,31 +133,34 @@
         contact: saigehopkins at gmail.com
       </div>
 
-      			<div id="topBanner"><section><img src="http://www196.lunapic.com/editor/working/148400428583311?1191733195"/></section></div>
+      			<div class="topBanner"><section><img src="http://www196.lunapic.com/editor/working/148400428583311?1191733195"/></section></div>
 <!--			<p style= "margin-right: 30px; margin-left: 30px;"> This is where I will describe
         my purpose as it pertains to the viewer.</p> -->
       <ul>
-        <li id="forth">
+        <li class="forth">
           <p><a href="http://1saigehopkins.github.io/InClassAssignment/"><img src="http://cdn.shopify.com/s/files/1/0948/6310/products/IMG_3867_1024x1024.jpg?v=1476916778"/></a> </p>
   <div>      professional work
   </div>
         </li>
-        <li id="first">
+        <li class="first">
           <p><a href="http://1saigehopkins.github.io/PhotoAlbum/"><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/14707858_1225026124235262_1246204332904428138_o.jpg?oh=b1833c135bfaf12a40d7612d475d2efe&oe=58DD93B7"/></a>
       <div>      personal work  </div>
            </p>
         </li>
-    <!--  <li id="second">
+    <!--  <li class="second">
 					<p>listed experiences<a href="http://1saigehopkins.github.io/mapSpecial/"><img src="https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/14707858_1225026124235262_1246204332904428138_o.jpg"/></a></p>
 				</li> -->
-        <li id="third">
+        <li class="third">
           <p><a href="http://1saigehopkins.github.io/webdesign/"><img src="http://1.bp.blogspot.com/-lLPY2tqiWh4/VC5dstP-JdI/AAAAAAAABa8/1QpqpDVzFik/s1600/WSBC0006.JPG"/></a>
         <div>    miscellaneous   </div>
           </p>
 				</li>
 
       </ul>
-			<div id="endBanner"><section></section></div>
+
+
+			<div class="endBanner"><section></section></div>
+
     </header>
   </body>
 </html>
