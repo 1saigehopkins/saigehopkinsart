@@ -10,7 +10,7 @@
     <script>
 
     $(function() {
-        $("img").hover(function(){
+        $("img").click(function(){
             $('.topBanner')
                 .animate({left:100,top:0,width:0,height:0});
         });
@@ -110,8 +110,9 @@
         height:85px;
         background-position: center;
         padding:10px;
-        margin-left: 60px;
+        margin-left: -60px;
         margin-right: 60px;
+        width: 150%;
       }
 
       .title {
