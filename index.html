@@ -9,20 +9,21 @@
 
     <script>
 
-    $(function() {
-        $("img").click(function(){
+    $(document).ready(function(){
+
+        $("topBanner").click(function(){
           if ( $('.topBanner').toArray().includes($()[0]) ) {
             $(this).removeClass("stretchd");
           } else {
-            $('img').removeClass("stretchd");
-            $(this).addClass("stretchd");
+            $('topBanner').removeClass("stretchd");
+            $(this).addClass("zoom");
           }
         })
 
         $(".topBanner").click(function(){
         $(".topBanner").toggleClass("zoom");
 
-        });
+        })
     });
           </script>
 
@@ -30,7 +31,6 @@
     <style>
 
     .topBanner img {
-      -webkit-transition: left 5s, height 15s;
       background-color:rgba(255,255,255,.01);
       width: 35%;
       margin-top: -300px;
@@ -49,8 +49,8 @@
       }
 
       .stretchd {
-        width: 1px;
-        height: 1px;
+        width: 300px;
+        height: 300px;
       }
 
       .zoom {
