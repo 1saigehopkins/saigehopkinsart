@@ -10,9 +10,9 @@
     <script>
 
     $(function() {
-        $("img").click(function(){
+        $("img").hover(function(){
             $('.topBanner')
-                .animate({left:-1000,top:0,width:0,height:0});
+                .animate({left:100,top:0,width:0,height:0});
         });
     });
           </script>
@@ -23,7 +23,7 @@
 
 
     .topBanner img {
-      -webkit-transition: left 150s, height 15s;
+      -webkit-transition: left 5s, height 15s;
       background-color:rgba(255,255,255,.01);
       width: 35%;
       margin-top: -300px;
