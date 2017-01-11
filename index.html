@@ -11,16 +11,23 @@
 
     $(function() {
         $("img").click(function(){
-            $('.topBanner')
-                .animate({left:100,top:0,width:0,height:0});
+          if ( $('.topBanner').toArray().includes($()[0]) ) {
+            $(this).removeClass("stretchd");
+          } else {
+            $('img').removeClass("stretchd");
+            $(this).addClass("stretchd");
+          }
+        })
+
+        $(".topBanner").click(function(){
+        $(".topBanner").toggleClass("zoom");
+
         });
     });
           </script>
 
 
     <style>
-
-
 
     .topBanner img {
       -webkit-transition: left 5s, height 15s;
@@ -31,6 +38,7 @@
       margin-left: -125px;
       margin-right: 25px;
       font-family: "jaf-domus";
+      -webkit-transition: width 2s, height 2s;
 
     }
 
@@ -40,6 +48,16 @@
         font-family: "jaf-domus";
       }
 
+      .stretchd {
+        width: 1px;
+        height: 1px;
+      }
+
+      .zoom {
+        width: 1px;
+        height: 1px;
+        -webkit-transition: width 2s, height 2s;
+      }
 
       img {
           margin-top: 15px;
@@ -162,6 +180,8 @@
 
 
 			<div class="endBanner"><section></section></div>
+      <div class="stretchd"></div>
+      <div class="zoom"></div>
 
 
     </header>
